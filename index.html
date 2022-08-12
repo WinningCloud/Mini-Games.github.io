@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Taviraj:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Distressed&family=Silkscreen&display=swap" rel="stylesheet">
+    <title>Mini-Games</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .left{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            width: 50vw;
+            height: 70vh;
+            background-color: red;
+        }
+        .right{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(41, 16, 205);
+            width: 50vw;
+            height: 70vh;
+        }
+        .box1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: purple;
+            font-family: 'Taviraj', serif;
+            font-size: 200px;
+            border: solid 5px black;
+            border-radius: 18px;
+            height: 400px;
+            width: 400px;
+            background-color:blanchedalmond;
+        }
+        .box2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: purple;
+            font-family: 'Taviraj', serif;
+            font-size: 200px;
+            border: solid 5px black;
+            border-radius: 18px;
+            height: 400px;
+            width: 400px;
+            background-color:blanchedalmond;        }
+        .container{
+            display: flex;
+            /* align-items: center; */
+            justify-content: center;
+        }
+        header{
+            font-family: 'Rubik Distressed', cursive;
+            font-size: 75px;
+            color: rgb(103, 221, 199);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            height: 20vh;
+        }
+        footer{
+            height: 10vh;
+            background-color: black;
+            color: yellow;
+            display: flex;
+            font-family: 'Silkscreen', cursive;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            
+        }
+        @keyframes blinking {
+            0%{
+                /* color: ; */
+            }
+            30%{
+                color: yellow;
+            }
+            60%{
+                color: red;
+            }
+            100%{
+                color: chartreuse;
+            }
+        }
+        .blink{
+            animation: blinking 1s   infinite ;
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Guess the <span class="blink">number!</span></h1>
+    </header>
+    <div class="container">
+        <div class="left">
+            <div class="box1">
+            </div>
+        </div><div class="right">
+            <div class="box2">
+            </div>
+        </div>
+        
+    </div>
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+</html>
